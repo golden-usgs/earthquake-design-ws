@@ -200,7 +200,6 @@ const AASHTO2009Factory = function (options) {
       result.probabilistic = promiseResults[0];
       result.metadata = promiseResults[1];
       result.inputs = inputs;
-
       return _this.computeBasicDesign(result);
     }).then((basicDesign) => {
       result.basicDesign = basicDesign;
